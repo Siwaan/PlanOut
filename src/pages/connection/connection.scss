@@ -1,0 +1,83 @@
+page-connection {
+/*   * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  } */
+
+/*   ion-content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Raleway;
+} */
+.scroll-content{
+  /*   padding: 0 !important;
+    z-index: 200; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Raleway;
+}
+.haut {
+    height: 38.2%;
+    width: 100%;
+    background-color: #39305c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bas {
+    height: 62.8%;
+    width: 100%;
+    padding: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form {
+    height: 62.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+ion-input {
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
+    font-size: 1.25em;
+}
+
+.submit {
+  height: 35px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #39305c;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bouton2 {
+    background-color: #f46891;
+    height: 5vh;
+    font-size: 1em;
+    border-radius: 2.5px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 15vh;
+    height: 15vh;
+    align-self: center;
+}
+} 

@@ -1,0 +1,52 @@
+<ion-content>
+<!--   <div class="page">
+    <div class="main">
+<div class="header">
+       <p class="titre">CREATION DU COMPTE</p>   
+       <p class="phrase">Bienvenue sur PlanOut</p>  
+    </div>
+
+      <ion-list>
+    
+        <ion-input type="text" class="champ" placeholder="Nom" name="nom" [(ngModel)]="data.nom" ></ion-input>
+        <ion-input type="text" class="champ" placeholder="Prénom" name="prenom" [(ngModel)]="data.prenom"></ion-input>
+        <ion-input type="text" class="champ" placeholder="Adresse mail" name="mail" [(ngModel)]="data.mail"></ion-input>
+        <ion-input type="password" class="champ" placeholder="Mot de passe" name="mdp" [(ngModel)]="data.mdp"></ion-input>
+        <ion-input type="password" class="champ" placeholder="Confirmer mot de passe" name="mdp2" [(ngModel)]="data.mdp2"></ion-input>
+        <button ion-button class="bouton1" (tap)="inscription()"> s'inscrire </button>
+          </ion-list>
+          
+        
+        <div class="bouton2" outline (tap)="goConnection()">Retour</div>
+        <div class="info"> info : {{ data.response}} </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div> -->
+  <div class="haut"><div class="icone"></div></div>
+  <div class="bas">
+    <div class="form">
+      <ion-input type="text" placeholder="nom d'utilisateur"  name="username" [(ngModel)]="data.username"> </ion-input>
+      <ion-input type="text" placeholder="Adresse mail" name="mail" [(ngModel)]="data.mail"></ion-input>
+      <ion-input type="text" placeholder="Mot de passe" name="mdp" [(ngModel)]="data.mdp"></ion-input>
+      <ion-input type="text" placeholder="Confirmer le mot de passe" name="mdp2" [(ngModel)]="data.mdp2"></ion-input>
+      <button class="submit" (tap)="inscription()">CREER LE COMPTE</button>
+      <!-- <div class="info"> info : {{ data.response}} </div> -->
+    </div>
+    <p>OU</p>
+    <button class="retour" (tap)="goConnection()">RETOUR</button>
+  </div>
+
+</ion-content>

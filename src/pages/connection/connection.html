@@ -1,0 +1,19 @@
+
+
+<ion-content>
+
+<div class="haut">
+  <img src="assets/imgs/logo.png" alt="">
+</div>
+<div class="bas">
+  <div class="form">
+    <ion-input type="text" placeholder="identifiant" [(ngModel)]="identification.username"> </ion-input>
+    <ion-input type="text" placeholder="Mot de passe" [(ngModel)]="identification.mdp"> </ion-input>
+    
+    <button class="submit" (tap)="connexion()"> CONNEXION </button>
+    <!-- <div class="reponse"> infos : {{identification.response}} </div> -->
+    </div>
+  <p>OU</p>
+  <button class="bouton2" (tap)="goInscription()">CREER UN COMPTE</button>
+</div>
+</ion-content>

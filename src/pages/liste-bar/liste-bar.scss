@@ -1,0 +1,132 @@
+page-liste-bar {
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    
+      ion-content{
+        margin: 0;
+      }
+    
+    
+      .bandeau{
+        background-color: #39305c ;
+        color: white;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+    
+      .bandeau img:nth-child(2){
+        width: 150px;
+      }
+    
+      .fleche_retour{
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        width: 30px;
+        align-content: flex-start;
+    
+      }
+    
+      .page {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        //   border: solid red;
+        background-color: white;
+    
+      }
+      .main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 90%;
+        // border: solid green;
+      }
+    
+      .onglets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 55px;
+        flex-wrap: wrap;
+        height: 78px;
+      }
+    
+      hr{
+        border: solid 1px rgba(0,0,0,0.15);
+        width: 100%;
+        align-self: center;
+      }
+    
+      #lien1, #lien2{
+    
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        margin: 20px;
+        border-radius: 50%;
+        border: solid 2px black;
+        align-content: center;
+        align-self: center;
+      }
+    
+      .filtreCentrer{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+      #contenu1 h1{
+        width: 100%;
+        text-align: center;
+        color: #39305c;
+        font-family: Arial, sans-serif;
+        font-size: 1.8rem;
+      }
+    
+      .liste_filtre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 70%;
+        max-width: 268px;
+        min-width: 180px;
+    
+      }
+    
+      .liste_filtre button{
+        width: 70px;
+        height: 70px;
+        margin-left: 0;
+        margin: 15px;
+        border-radius: 50%;
+        background-color: white;
+        border: solid 2px #39305c;
+        align-self: center;
+      }
+    
+      .btnRechercher{
+      background-color: #f46891;
+      color: white;
+        font-size: 2rem;
+        font-family: Arial, sans-serif;
+        width: 70%;
+        max-width: 268px;
+        padding: 8px;
+        border-radius: 2px;
+        margin: 30px;
+    }
+    
+      .hidden{display:none}body{font-family:Georgia,serif;color:#555;line-height:24px;max-width:650px;margin:3rem auto 0}h1,h2{color:#000}
+    
+      .selected{background-color: #39305c;}
+    
+}

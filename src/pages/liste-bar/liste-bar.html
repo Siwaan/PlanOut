@@ -1,0 +1,78 @@
+<!--
+  Generated template for the ListeBarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <nav class="bandeau">
+    <img class="fleche_retour" (tap)="goAccueil()" src="../../assets/imgs/fleche_retour.png" alt="">
+    <img src="../../assets/imgs/Logocomplet.png" alt="">
+
+  </nav>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="page">
+
+        <div class="main">
+    
+          <nav class="onglets">
+            <button (tap)="onglet1()" id="lien1" class="selected"></button>
+    
+            <button (tap)="onglet2()" id="lien2"></button>
+    
+            <hr>
+    
+          </nav>
+    
+    
+    
+          <section class="contenus">
+            <div id="contenu1">
+              <h1>Choisissez vos filtres</h1>
+    
+              <div class="filtreCentrer">
+              <div class="liste_filtre">
+                <button class="btnFiltre"><div class=""></div></button>
+                <button><div class="btnFiltre"></div></button>
+                <button><div class="btnFiltre"></div></button>
+                <button><div class="btnFiltre"></div></button>
+              </div>
+    
+              <button class="btnRechercher" type="submit" (tap)="onglet2()"> <b>RECHERCHER</b></button>
+            </div>
+            </div>
+    
+            <div id="contenu2" class="hidden">
+              <h1>Liste des bars</h1>
+              <ion-list>
+                  <ion-item *ngFor="let bar of listeBars" (tap)="goDetailBar(bar)">
+                    <div></div>
+                      <h1> {{bar.name}} </h1>
+                      <p> {{bar.vicinity}}  <br> 
+                        {{bar.rating}}/5
+                     </p>
+                  </ion-item>
+                  </ion-list>
+            </div>
+          </section>
+    
+    {{horaires}}
+    
+    
+    
+        </div>
+      </div>
+    
+    
+
+<!-- <ion-list>
+<ion-item *ngFor="let bar of listeBars" (tap)="goDetailBar(bar)">
+    <h1> {{bar.name}} </h1>
+    <p>  {{bar.rating}}  <br> {{bar.place_id}}  </p>
+</ion-item>
+</ion-list> -->
+
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-content>
+  <!--       <button ion-button (tap)="goConnexion()"></button>
+    <div class="main">
+        <div class="profil"></div>
+        <h1>  {{ .nom}}    </h1>
+        <h3 *ngIf="result"> {{result.mail}}     </h3>
+        <h3 *ngIf="result">  {{result.prenom}} {{result.nom}} </h3>
+        <div class="bouton">Rechercher</div>
+        <div class="bouton">Invitations</div>
+
+        <p>@planout</p>
+    </div> -->
+
+    <div class="haut"><div class="photo"></div></div>
+    <div class="milieu">
+      <p>{{result.username}}</p>
+      <p> {{ result.mail}} </p>
+      <p>numéro de téléphone</p>
+      <hr>
+      <div class="liens">
+        <div class="vers amis" (tap)="goAmis()"> <!-- <img src="../../assets/imgs/AjouterAmis.png" alt="">  --> </div>
+        <div class="vers"></div>
+        <div class="vers"></div>
+        <div class="vers déconnexion" (tap)="goConnexion()"></div>
+      </div>
+    </div>
+    <div class="bas">
+      <button class="chercher" (tap)="goListeBar()">CHERCHER UN BAR</button>
+      <p>OU</p>
+      <button>VOIR LES INVITATIONS</button>
+    </div>
+</ion-content>

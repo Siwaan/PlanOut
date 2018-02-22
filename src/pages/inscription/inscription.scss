@@ -1,0 +1,85 @@
+page-inscription {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  ion-content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Raleway;
+}
+
+.icone {
+    width: 10vh;
+    height: 10vh;
+    background-color: #f46891;
+    border-radius: 5px;
+    align-self: center;
+    bottom: -5vh;
+    position: relative;
+}
+
+.haut {
+    height: 19.1%;
+    width: 100%;
+    background-color: #39305c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bas {
+    height: 80.9%;
+    width: 100%;
+    padding: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form {
+    height: 80.9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+ion-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
+    font-size: 1.25em;
+}
+
+.submit {
+  height: 35px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #39305c;
+    margin-top: 5vh;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.retour {
+    background-color: #f46891;
+    height: 5vh;
+    font-size: 1em;
+    border-radius: 2.5px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 15vh;
+    height: 15vh;
+    align-self: center;
+}
+}

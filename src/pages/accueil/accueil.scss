@@ -1,0 +1,100 @@
+page-accueil{
+
+    ion-content {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: Raleway;
+    }
+
+    .photo {
+        width: 15vh;
+        height: 15vh;
+        background-color: #f46891;
+        border-radius: 1000px;
+        align-self: center;
+        bottom: -7.5vh;
+        position: relative;
+    }
+
+    .haut {
+        height: 19.1%;
+        width: 100%;
+        background-color: #39305c;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    hr {
+        width: 100%;
+        height: 3px;
+        color: black;
+    }
+
+    .liens {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .vers {
+        height: 5vh;
+        width: 5vh;
+        background-color: #39305c;
+        border-radius: 1000px;
+    }
+
+    .milieu {
+        height: 49.9962%;
+        width: 100%;
+        padding: 12.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.25em;
+    }
+
+    .bas {
+        height: 30.9038%;
+        width: 100%;
+        padding: 12.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    }
+
+
+    
+
+    .chercher {
+        border: none;
+        border-radius: 2.5px;
+        background-color: #39305c;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #f46891;
+        height: 5vh;
+        font-size: 1em;
+        border-radius: 2.5px;
+        color: white;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        width: 15vh;
+        height: 15vh;
+        align-self: center;
+    }
+
+}

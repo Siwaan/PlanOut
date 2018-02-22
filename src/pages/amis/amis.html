@@ -1,0 +1,87 @@
+<ion-header>
+
+  <nav class="bandeau">
+    <img class="fleche_retour" (tap)="goAccueil()" src="../../assets/imgs/fleche_retour.png" alt="">
+    <img src="../../assets/imgs/Logocomplet.png" alt="">
+  </nav>
+
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="page">
+
+    <div class="main">
+
+      <nav class="onglets">
+        <button (tap)="onglet1()" id="lien1" class="selected"></button>
+
+        <button (tap)="onglet2()" id="lien2"></button>
+
+        <hr>
+
+      </nav>
+
+
+      <section class="contenus">
+        <div id="contenu1">
+
+
+          <ion-input placeholder="chercher une personne" (keyup)="listeNonAmis()" [(ngModel)]="recherche"></ion-input>
+          
+          <div class="liste_potentiel_amis">
+              <div class="ami" *ngFor="let NonAmi of NonAmis">
+          
+              <div class="photo_profil"></div>
+              <h2 class="pseudo"> {{ NonAmi.username }} </h2>  <button (tap)="ajouterAmis(NonAmi.username)"><img src="../../assets/imgs/ajouterAmi.png" alt=""></button>
+            
+              </div>
+            
+              <div class="ami" *ngFor="let Confirm of confirmMoi">
+          
+                  <div class="photo_profil"></div>
+                  <h2 class="pseudo"> {{ Confirm.username }} </h2>  <button (tap)="confirmation(Confirm.username)" ><img src="../../assets/imgs/valider.png" alt=""></button>
+                
+                  </div>
+                
+          </div>
+           
+        </div>
+
+        <div id="contenu2" class="hidden">
+          <h1>Mes amis</h1>
+
+          <div class="liste_amis" >
+              <div class="ami" *ngFor="let ami of amis">
+                  <div class="photo_profil"></div>
+                  <h2 class="pseudo">{{ami.username}}</h2>
+                  <button (tap)="supprimerAmis(ami.username)"><img src="../../assets/imgs/supprimerAmi.png" alt=""></button>
+              
+                </div>
+              
+          </div>
+         
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- <ion-list>
+<ion-item *ngFor="let nonAmi of NonAmis">
+  {{nonAmi.username}} <br>
+  {{nonAmi.mail}}
+</ion-item>
+</ion-list> -->
+
+
+</ion-content>
